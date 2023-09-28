@@ -3,6 +3,7 @@ package com.example.recyclerview;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
+import androidx.core.app.NotificationCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -11,6 +12,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import java.sql.Array;
@@ -23,6 +26,9 @@ public class  MainActivity extends AppCompatActivity implements IClickUserItemLi
     private UserAdapter sUserAdapter;
     private SearchView searchView;
     List<User> list = new ArrayList<>();
+
+    Button notiButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -108,4 +114,5 @@ public class  MainActivity extends AppCompatActivity implements IClickUserItemLi
 //        }
 //            return super.onOptionsItemSelected(item);
 //    }
+
 }
